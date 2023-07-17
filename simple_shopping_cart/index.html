@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class='container'>
+      <h1 class='text-center'>Shopping Cart</h1><br>
+      <div class='col-12'>
+        <table class='table table-responsive' id='cart'>
+          <thead class='warning'>
+            <tr >
+              <th scope='col'>Item</th>
+              <th scope='col'>Price Per Item</th>
+              <th scope='col'>Quantity</th>
+              <th scope='col'>Cost</th>
+              <th scope='col'></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class='item'>versace Eros</td>
+              <td class='amt'>200.00</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-xs cancel'>Cancel</button></td>
+            </tr>
+            <tr>
+              <td class='item'>Aventus Creed</td>
+              <td class='amt'>140.00</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-xs cancel'>Cancel</button></td>
+            </tr>
+            <tr>
+              <td class='item'>Bleu De Hanel</td>
+              <td class='amt'>380</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-xs cancel'>Cancel</button></td>
+            </tr>
+            <tr>
+              <td class='item'>Terre d'Hermes</td>
+              <td class='amt'>200.00</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-xs cancel'>Cancel</button></td>
+            </tr>
+            <tr>
+              <td class='item'>Boss Femme</td>
+              <td class='amt'>360.00</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-xs cancel'>Cancel</button></td>
+            </tr>
+            <div class="msg"></div>
+            <tr id='lastRow'>
+              <td><input class='form-control input-sm' type='text' id='item' placeholder='new item'></input></td>
+              <td><input class='form-control input-sm' type='number' id='amt' placeholder='price'></input></td>
+              <td colspan='2'></td>
+              <td><button class='btn btn-success btn-sm add'>Add</button></td>
+            </tr>
+          </tbody>
+          <tfoot style='font-weight: bold' class='warning'>
+            <tr>
+              <td colspan='3'>SUM TOTAL</td>
+              <td ID='sumTotal'></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
